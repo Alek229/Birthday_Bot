@@ -42,7 +42,7 @@ def send_whatsapp_message(body):
 def schedule_reminders():
     """Schedule reminders to run every day."""
     print("DEBUG: Scheduler started.")
-    schedule.every().day.at("18:09").do(send_birthday_reminders)
+    schedule.every().day.at("17:13").do(send_birthday_reminders)
     while True:
         schedule.run_pending()
         time.sleep(1)
